@@ -5,7 +5,7 @@ from com.chaquo.python import Python
 def main(CodeAreaData,inputText):
     file_dir = str(Python.getPlatform().getApplication().getFilesDir())
     inputs = inputText.split("\n")
-    def input():
+    def input(prompt=None):
         temp = inputs.pop(0)
         return temp
 
