@@ -2,8 +2,12 @@ import sys
 from os.path import dirname, join
 from com.chaquo.python import Python
 
-def main(CodeAreaData):
+def main(CodeAreaData,inputText):
     file_dir = str(Python.getPlatform().getApplication().getFilesDir())
+    inputs = inputText.split("\n")
+    def input():
+        temp = inputs.pop(0)
+        return temp
 
     filename = join(dirname(file_dir), 'file.txt')
     try:

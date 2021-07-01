@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Python py = Python.getInstance();
                 PyObject pyObject = py.getModule("myScript");
-                PyObject obj = pyObject.callAttr("main", code.getText().toString());
+                PyObject obj = pyObject.callAttr("main", code.getText().toString(), stdin.getText().toString());
                 stdout.setText(obj.toString());
             }
         });
