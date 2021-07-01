@@ -3,6 +3,7 @@ package com.sudip.pythoninterpretor;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.text.method.ScrollingMovementMethod;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -21,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         stdout = (TextView) findViewById(R.id.stdout);
+        stdout.setMovementMethod(new ScrollingMovementMethod());
         code = (EditText) findViewById(R.id.code);
         stdin = (EditText) findViewById(R.id.stdin);
         run = (ImageView) findViewById(R.id.run);

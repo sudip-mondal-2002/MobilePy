@@ -47,7 +47,7 @@
 
     <EditText
         android:id="@+id/stdin"
-        android:layout_width="343dp"
+        android:layout_width="336dp"
         android:layout_height="86dp"
         android:ems="10"
         android:gravity="start|top"
@@ -69,12 +69,13 @@
 
     <TextView
         android:id="@+id/stdout"
-        android:layout_width="343dp"
+        android:layout_width="336dp"
         android:layout_height="86dp"
         android:background="@drawable/edit_text_border"
         app:layout_constraintStart_toStartOf="@+id/textView4"
         app:layout_constraintTop_toBottomOf="@+id/textView4"
-        android:padding="10dp" />
+        android:padding="10dp"
+        android:scrollbars = "vertical" />
 
     <ImageView
         android:id="@+id/run"
